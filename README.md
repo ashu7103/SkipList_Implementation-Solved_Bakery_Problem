@@ -19,7 +19,8 @@ A **SkipList** is a probabilistic data structure that allows fast **search**, **
 ### 🔧 How it works:
 
 * A SkipList consists of **multiple levels of sorted linked lists**.
-* Can have duplicates( duplicates are inserted after existing nodes with the same value)
+* Can have duplicates( duplicates are **inserted Before same value Node** )
+* Delete **1st appered value** of Duplicates
 * The bottom level contains **all elements**.
 * Each higher level acts as an **"express lane"**, skipping over elements to speed up searches.
 * Nodes are promoted to higher levels based on a **randomized process** (coin-flip style).
